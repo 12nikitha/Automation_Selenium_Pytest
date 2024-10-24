@@ -24,7 +24,7 @@ class Register():
     def test_company(self,comp):
         self.driver.find_element(By.ID,Details.company ).send_keys(comp)
     def test_mail(self,mail):
-        self.driver.find_element(By.ID, Details.Email).send_keys(mail)
+        self.driver.find_element(By.XPATH, Details.Email).send_keys(mail)
     def test_password(self,code):
         self.driver.find_element(By.ID,Details.password ).send_keys(code)
     def test_conformpassword(self,cp):
@@ -45,7 +45,7 @@ class Register():
 #     driver.find_element(By.ID, ).send_keys(name)
 #     driver.find_element(By.ID, ).send_keys("")
 #     time.sleep(3)
-#     driver.find_element(By.ID, ).send_keys("abc2@gmail.com")
+#     driver.find_element(By.ID,,"" ).send_keys("abc2@gmail.com")
 #     driver.find_element(By.ID, ).send_keys("abciop10")
 #     driver.find_element(By.ID, ).send_keys("abciop10")
 #     driver.find_element(By.XPATH, ).click()

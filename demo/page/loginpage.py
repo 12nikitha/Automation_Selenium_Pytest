@@ -11,8 +11,8 @@ class Login():
         self.login=Details.login
 
     def test_enter_username(self,name):
-        self.driver.find_element(By.NAME,Details.name ).clear()
-        self.driver.find_element(By.NAME, Details.name).send_keys(name)
+        self.driver.find_element(By.XPATH,Details.Email ).clear()
+        self.driver.find_element(By.XPATH, Details.Email).send_keys(name)
 
     def test_enter_password(self,code):
         self.driver.find_element(By.NAME,Details.password ).clear()
